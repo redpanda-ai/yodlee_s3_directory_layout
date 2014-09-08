@@ -8,7 +8,7 @@ S3://
 			australia/
 </pre>
 
-This is the home of our "Australia Users" data panel.
+This is the home of our "Australian Users" data panel.
 It is separated into 3 directories, one for **bank**, one for **card**, and a directory of **release_notes**:
 
 <pre>
