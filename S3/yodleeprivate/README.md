@@ -1,7 +1,7 @@
 yodleeprivate
 =============
 The S3 bucket, **yodleeprivate**, is the home for files used by our data processing infrastructure.
-it is **for internal use only** and will access is restricted to Yodlee personnel and systems.
+it is **for internal use only** and access is restricted to Yodlee personnel and systems.
 
 For simplicity's sake, all panel processing is grouped under the **panels** directory:
 <pre>
