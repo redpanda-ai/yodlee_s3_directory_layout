@@ -6,8 +6,8 @@ S3://
 	yodleeproducts/
 </pre>
 
-The S3 bucket, "yodleeproducts", is the home for every data product we provide to our customers via S3.
-For simplicity's sake, all panels are grouped under the "panels" directory:
+The S3 bucket, **yodleeproducts**, is the home for every data product we provide to our customers via S3.
+For simplicity's sake, all panels are grouped under the **panels** directory:
 
 <pre>
 S3://
