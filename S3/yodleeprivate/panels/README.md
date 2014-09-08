@@ -1,8 +1,7 @@
 panels
 =============
-**panels** lies within **yodleeprivate**, and hosts our data panel processing infrastructure.
-
-There are currently five different working areas, or modules, each within its own sub-directory.
+**panels** hosts our data panel processing infrastructure.  Different working areas, or modules, each have their own sub-directory for a different type of work.
+There are currently five different working areas, or modules:
 <pre>
 S3://
 	yodleeprivate/
