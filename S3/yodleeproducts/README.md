@@ -15,7 +15,7 @@ S3://
 		panels/
 </pre>
 
-If in the future, we offered another type of data product via S3, that directory would go here as well:
+If in the future, we offered **another_yodlee_product** via S3, that directory would go here as well:
 
 <pre>
 S3://
