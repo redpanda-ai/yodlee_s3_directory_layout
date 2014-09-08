@@ -1,7 +1,7 @@
 S3
 ==============
-We are restricting all of work to two buckets, **yodleeprivate** and **yodleeproducts**.
-Anything currently placed outside of these two buckets **NEEDS TO BE MOVED** as soon as possible.
+All of our work will reside in one of two buckets, either **yodleeprivate** or **yodleeproducts**.
+Anything currently placed outside of these two buckets **MUST BE MOVED** as soon as this document is ratified.
 
 <pre>
 S3://
