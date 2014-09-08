@@ -2,14 +2,8 @@ yodleeprivate
 =============
 The S3 bucket, **yodleeprivate**, is the home for files used by our data processing infrastructure.
 it is **for internal use only** and will access is restricted to Yodlee personnel and systems.
-YSO and Operations heavily regulate access to this bucket, and access is only available from certain whitelisted IP addresses.
-All documents written here must use Server Side Encryption / AES-256 (this is enforced by the S3 bucket policy).
 
-<pre>
-S3://
-	yodleeprivate/
-</pre>
-
+There are currently five different modules, each within its own sub-directory.
 <pre>
 S3://
 	yodleeprivate/
@@ -20,11 +14,14 @@ S3://
 		pii_removed_six_million
 </pre>
 
-### Sequence
-| Name                 |Input Source             | Depends On             |
-| -------------------- | --------------------    | ---------------------- |
-| clustering_tool      | goldrush_six_million    | goldrush_six_million   |
-| goldrush_six_million | Yodlee's Data Warehouse | Yodlee's Data Warehouse|
-
+The following outlines the execution dependies amongst each module.
+### Execution dependencies
+| Name                    | Depends On              | Execution Order |
+| ----------------------- | ----------------------- | --------------: |
+| clustering_tool         | goldrush_six_million    | 2               |
+| goldrush_six_million    | Yodlee's Data Warehouse | 1               |
+| mastercard              | pii_removed_six_million | 5               |
+| meerkat                 | clustering_tool         | 3               |
+| pii_removed_six_million | meerkat                 | 4               |
 
 
