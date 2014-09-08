@@ -20,7 +20,7 @@ S3://
 			mastercard/
 </pre>
 
-If in the future, we offered **a_new_panel** via S3, that directory would be placed within the **panels** directory:
+If in the future, we offered **a_new_panel** via S3, that new panel would be have its own sub-directory within the **panels** directory:
 
 <pre>
 S3://
