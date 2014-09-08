@@ -15,11 +15,11 @@ S3://
 		panels/
 </pre>
 
-If in the future, we offered **another_yodlee_product** via S3, that directory would go here as well:
+If in the future, we offered **another_group_of_products** via S3, that directory would go here as well:
 
 <pre>
 S3://
 	yodleeproducts/
 		panels/
-		another_yodlee_product/
+		another_group_of_products/
 </pre>
