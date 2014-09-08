@@ -39,7 +39,7 @@ A subset of approximately 3 million users taken from **pii_removed_six_million**
 
 A machine-learning optimized search engine that finds the source of billions financial transactions.  Built using Python3 and ElasticSearch, in runs on the Elastic Compute Cloud.
 
-# pii_removed_six_million
+## pii_removed_six_million
 
 Removes context-specific private information from the meerkat panels.  This system is written in Pig and runs on Elastic Map Reduce.
 
