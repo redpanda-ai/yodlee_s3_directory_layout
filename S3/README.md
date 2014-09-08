@@ -1,10 +1,11 @@
-yodleeproducts
+S3
 ==============
-The S3 bucket, **yodleeproducts**, is the home for every data product we provide to our customers via S3.
-it is **public-facing** but access is restricted to certain AWS and IAM users, to restrict customer access.
+We are restricting all of work to two buckets, **yodleeprivate** and **yodleeproducts**.
+Anything currently placed outside of these two buckets **NEEDS TO BE MOVED** as soon as possible.
 
 <pre>
 S3://
+	yodleeprivate/
 	yodleeproducts/
 </pre>
 
@@ -18,6 +19,16 @@ All documents written here must use Server Side Encryption / AES-256 (this is en
 <pre>
 S3://
 	yodleeprivate/
+</pre>
+
+yodleeproducts
+==============
+The S3 bucket, **yodleeproducts**, is the home for every data product we provide to our customers via S3.
+it is **public-facing** but access is restricted to certain AWS and IAM users, to restrict customer access.
+
+<pre>
+S3://
+	yodleeproducts/
 </pre>
 
 
