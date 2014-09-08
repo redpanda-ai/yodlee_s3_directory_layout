@@ -16,12 +16,11 @@ S3://
 
 The following outlines the execution dependies amongst each module.
 ### Execution dependencies
-| Name                    | Depends On              | Execution Order |
-| ----------------------- | ----------------------- | --------------: |
-| clustering_tool         | goldrush_six_million    | 2               |
-| goldrush_six_million    | Yodlee's Data Warehouse | 1               |
-| mastercard              | pii_removed_six_million | 5               |
-| meerkat                 | clustering_tool         | 3               |
-| pii_removed_six_million | meerkat                 | 4               |
-
+| Execution Order | Name                    | Depends On              |
+| --------------: | ----------------------- | ----------------------- |
+|               1 | goldrush_six_million    | Yodlee's Data Warehouse |
+|               2 | clustering_tool         | goldrush_six_million    |
+|               3 | meerkat                 | clustering_tool         |
+|               4 | pii_removed_six_million | meerkat                 |
+|               5 | mastercard              | pii_removed_six_million |
 
