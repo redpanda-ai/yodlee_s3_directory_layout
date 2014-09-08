@@ -10,7 +10,7 @@ S3://
 		panels/
 </pre>
 
-If in the future, we needed to support **another_type_of_processing** with S3, that directory would be placed at the same level as the **panels** directory:
+If in the future, if we needed to support **another_type_of_processing** with S3, that directory would be placed alongside the **panels** directory:
 
 <pre>
 S3://
