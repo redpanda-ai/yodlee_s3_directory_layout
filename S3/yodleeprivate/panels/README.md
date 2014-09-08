@@ -7,8 +7,8 @@ S3://
 </pre>
 
 The **panels** directory hosts our data panel processing infrastructure.
-Different working areas, or *modules*, each have their own sub-directory for a different type of work.
-There are currently five different working areas, or modules:
+Different working areas, or **modules**, each have their own sub-directory for a different type of work.
+There are currently five modules:
 <pre>
 S3://
 	yodleeprivate/
