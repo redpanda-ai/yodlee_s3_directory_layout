@@ -15,20 +15,20 @@ S3://
 		panels/
 			clustering_tool/
 			goldrush_six_million/
-			mastercard/
+			cmc_panel/
 			meerkat/
 			pii_removed_six_million
 </pre>
 
 The following outlines the execution dependies amongst each module.
 ### Execution dependencies
-| Execution Order | Name                    | Depends On              |
-| --------------: | ----------------------- | ----------------------- |
-|               1 | goldrush_six_million    | Yodlee's Data Warehouse |
-|               2 | clustering_tool         | goldrush_six_million    |
-|               3 | meerkat                 | clustering_tool         |
-|               4 | pii_removed_six_million | meerkat                 |
-|               5 | mastercard              | pii_removed_six_million |
+| Execution Order | Name                    | Depends On                                 |
+| --------------: | ----------------------- | ------------------------------------------ |
+|               1 | goldrush_six_million    | Yodlee's Data Warehouse                    |
+|               2 | clustering_tool         | any panel, such as goldrush_six_million    |
+|               3 | meerkat                 | clustering_tool                            |
+|               4 | pii_removed_six_million | meerkat                                    |
+|               5 | cmc_panel              | pii_removed_six_million                     |
 
 ## clustering_tool
 
@@ -38,8 +38,8 @@ Used to find commonly occuring permutations of our top merchants.  This system i
 
 The "Six million" panel is originally produced by Yodlee's GoldRush (a Hadoop based data warehouse run in a traditional data center).
 
-## mastercard
-A subset of approximately 3 million users taken from **pii_removed_six_million**.  This is specifically for one of our customers, MasterCard.
+## cmc_panel
+A subset of approximately 3 million users taken from **pii_removed_six_million**.  This is specifically for one of our customers.
 
 ## meerkat
 

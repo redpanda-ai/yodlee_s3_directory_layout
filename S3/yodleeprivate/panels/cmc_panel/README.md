@@ -1,13 +1,13 @@
-mastercard
+cmc_panel
 =============
-A subset of approximately 3 million users taken from **pii_removed_six_million**.  This is specifically for one of our customers, MasterCard.
+A subset of approximately 3 million users taken from **pii_removed_six_million**.  This is specifically for one of our customers.
 
 Output is split into three different subfolders:
 <pre>
 S3://
 	yodleeprivate/
 		panels/
-			mastercard/
+			cmc_panel/
 				bank/
 				card/
 				error/
