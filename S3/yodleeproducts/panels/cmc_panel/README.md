@@ -1,21 +1,21 @@
-mastercard
+cmc_panel
 ==============
 
 <pre>
 S3://
 	yodleeproducts/
 		panels/
-			mastercard/
+			cmc_panel/
 </pre>
 
-This is the home of the panel we are offering to MasterCard.
+This is the home of the panel we are offering to one of our customers.
 It is separated into 3 directories, one for **bank**, one for **card**, and a directory of **release_notes**:
 
 <pre>
 S3://
 	yodleeproducts/
 		panels/
-			mastercard/
+			cmc_panel/
 				bank/
 				card/
 				release_notes/
