@@ -24,7 +24,7 @@ The following outlines the execution dependies amongst each module.
 ### Execution dependencies
 | Execution Order | Name                    | Depends On                                 |
 | --------------: | ----------------------- | ------------------------------------------ |
-|               1 | goldrush_six_million    | Yodlee's Data Warehouse                    |
+|               1 | goldrush                | Yodlee's Data Warehouse                    |
 |               2 | clustering_tool         | any panel type such as goldrush/6m         |
 |               3 | meerkat                 | clustering_tool                            |
 |               4 | pii_masked              | meerkat                                    |
